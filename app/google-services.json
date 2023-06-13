@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "246566781130",
+    "project_id": "places-of-literary-importance",
+    "storage_bucket": "places-of-literary-importance.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:246566781130:android:502a6a730077d98eeeb433",
+        "android_client_info": {
+          "package_name": "com.example.placesofliteraryimportance"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "246566781130-h60e70j2a9b5cipfdadde4kb69nvesr0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.placesofliteraryimportance",
+            "certificate_hash": "547e481517de03ee25581ba6c6818a41432591eb"
+          }
+        },
+        {
+          "client_id": "246566781130-sitjl42rgeqmrmi70ot4v841p7mdpgfq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDOJ3WXBqQQoJHj9KOPeyoMaWEdTch_DdQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "246566781130-sitjl42rgeqmrmi70ot4v841p7mdpgfq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
