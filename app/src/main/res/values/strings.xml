@@ -1,3 +1,23 @@
 <resources>
     <string name="app_name">Places of Literary Importance</string>
+    <string-array name="place_types">
+        <item>All</item>
+        <item>Province</item>
+        <item>County</item>
+        <item>City</item>
+        <item>Town</item>
+        <item>Townland</item>
+        <item>Barony</item>
+        <item>Street</item>
+        <item>Village</item>
+        <item>River</item>
+        <item>Other</item>
+        <item>Country</item>
+        <item>Castle</item>
+        <item>Seignory</item>
+        <item>Forest</item>
+        <item>Lake</item>
+        <!-- Add all place types from the JSON file here -->
+    </string-array>
+
 </resources>
