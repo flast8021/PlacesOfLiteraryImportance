@@ -3,8 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Dorset/year3/MobileAppRepeatAcessment/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.133" />
+        <entry key="..\:/Dorset/year3/MobileAppRepeatAcessment/app/src/main/res/drawable/custom_marker.xml" value="0.1" />
+        <entry key="..\:/Dorset/year3/MobileAppRepeatAcessment/app/src/main/res/drawable/custom_seekbar.xml" value="0.1" />
+        <entry key="..\:/Dorset/year3/MobileAppRepeatAcessment/app/src/main/res/drawable/custom_seekbar_progress.xml" value="0.1" />
         <entry key="..\:/Dorset/year3/MobileAppRepeatAcessment/app/src/main/res/drawable/ic_info.xml" value="0.1" />
-        <entry key="..\:/Dorset/year3/MobileAppRepeatAcessment/app/src/main/res/layout/activity_main.xml" value="0.49068901303538176" />
+        <entry key="..\:/Dorset/year3/MobileAppRepeatAcessment/app/src/main/res/drawable/ic_logo.xml" value="0.133" />
+        <entry key="..\:/Dorset/year3/MobileAppRepeatAcessment/app/src/main/res/layout/activity_main.xml" value="0.18596491228070175" />
         <entry key="..\:/Dorset/year3/MobileAppRepeatAcessment/app/src/main/res/layout/place_details_layout.xml" value="0.2" />
         <entry key="..\:/Dorset/year3/MobileAppRepeatAcessment/app/src/main/res/layout/popup_window.xml" value="0.1" />
         <entry key="..\:/Dorset/year3/MobileAppRepeatAcessment/app/src/main/res/menu/menu_main.xml" value="0.176" />
