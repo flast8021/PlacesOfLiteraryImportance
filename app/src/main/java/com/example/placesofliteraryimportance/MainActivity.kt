@@ -56,7 +56,6 @@ class MainActivity : AppCompatActivity(), GoogleMap.OnInfoWindowClickListener,
     private var newProgress: Int = 10
     private var radiusSeekBar: SeekBar? = null
 
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         supportActionBar?.hide()
@@ -72,7 +71,6 @@ class MainActivity : AppCompatActivity(), GoogleMap.OnInfoWindowClickListener,
 
             markerCreated = false
 
-
             googleMap.setOnInfoWindowClickListener(this)
             googleMap.setOnMapLongClickListener(this)
 
@@ -83,7 +81,7 @@ class MainActivity : AppCompatActivity(), GoogleMap.OnInfoWindowClickListener,
             spinner.adapter = adapter
 
             radiusSeekBar = findViewById(R.id.seekbar_radius)
-            radiusSeekBar?.progress = 10 // Set default radius to 10 km
+            radiusSeekBar?.progress = 10 // Setting default radius to 10 km
 
             radiusSeekBar?.setOnSeekBarChangeListener(object : SeekBar.OnSeekBarChangeListener {
 
@@ -319,6 +317,7 @@ class MainActivity : AppCompatActivity(), GoogleMap.OnInfoWindowClickListener,
         }
         fusedLocationClient.lastLocation
             .addOnSuccessListener { location: Location? ->
+
                 if (location != null) {
                     // Using the obtained location coordinates
                     val latitude = location.latitude
@@ -376,8 +375,7 @@ class MainActivity : AppCompatActivity(), GoogleMap.OnInfoWindowClickListener,
         when (requestCode) {
             LOCATION_PERMISSION_REQUEST_CODE -> {
                 if (grantResults.isNotEmpty() && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-                    //  initializeMap()
-                    //loadPlacesAndDisplayMarkers()
+
                 } else {
                     Toast.makeText(this, "Location permission required", Toast.LENGTH_SHORT).show()
                     val intent = Intent(Settings.ACTION_APPLICATION_DETAILS_SETTINGS)
@@ -421,12 +419,11 @@ class MainActivity : AppCompatActivity(), GoogleMap.OnInfoWindowClickListener,
         val placeTypesUrl =
             "https://gist.githubusercontent.com/saravanabalagi/541a511eb71c366e0bf3eecbee2dab0a/raw/bb1529d2e5b71fd06760cb030d6e15d6d56c34b3/place_types.json"
 
-
         fetchJSONData(placeTypesUrl) { placeTypesArray ->
             fetchJSONData(placeUrl) { placesArray ->
                 placeTypesArray?.let { types ->
                     placesArray?.let { places ->
-                        // Display markers based on place types and places
+                        // Displaying markers based on place types and places
                         displayMarkers(types, places)
                         spinner_place_type.onItemSelectedListener =
                             object : AdapterView.OnItemSelectedListener {
@@ -440,7 +437,9 @@ class MainActivity : AppCompatActivity(), GoogleMap.OnInfoWindowClickListener,
                                     val selectedPlaceType = parent.getItemAtPosition(position)
                                     val positionOfSelectedPlace =
                                         arrayPlacee.indexOf(selectedPlaceType)
+
                                     if (selectedPlaceType == "All") {
+
                                         // Clearing and then Displaying markers for all places
                                         googleMap.clear()
                                         displayMarkers(placeTypesArray, placesArray)
@@ -477,9 +476,7 @@ class MainActivity : AppCompatActivity(), GoogleMap.OnInfoWindowClickListener,
             val placeTypeId = placeObject.getString("place_type_id")
 
             if (placeTypeId == placeType) {
-                //  placesFiltered = true
                 filteredPlaces.put(placeObject)
-
             }
         }
         val count = filteredPlaces.length()
